@@ -97,5 +97,5 @@ services:
         class: ProcessManagerBundle\Command\ExecutableRunCommand
         arguments:
             - CoreShop\Component\Registry\ServiceRegistry
-       tags:
-           - { name: 'console.command', command: 'process-manager:executable:run' }
+        tags:
+            - { name: 'console.command', command: 'process-manager:executable:run' }
