@@ -91,3 +91,11 @@ services:
         class: ProcessManagerBundle\Process\CompositeProcessStartupFormResolver
         arguments:
             - '@process_manager.registry.startup_form_resolver'
+
+    ### Console Command
+    process_manager.command.executable_run:
+        class: ProcessManagerBundle\Command\ExecutableRunCommand
+        arguments:
+            - CoreShop\Component\Registry\ServiceRegistry
+       tags:
+           - { name: 'console.command', command: 'process-manager:executable:run' }
