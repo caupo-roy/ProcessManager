@@ -17,7 +17,7 @@
     }
   ],
   "require": {
-    "coreshop/resource-bundle": "^3.0",
+    "coreshop/resource-bundle": "^3.0|^2.1",
     "pimcore/pimcore": "^6.6",
     "dragonmantank/cron-expression": "^2.0"
   },
